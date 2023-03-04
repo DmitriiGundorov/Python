@@ -15,11 +15,11 @@ for i in range(n):
         count_0 += 1
     else:
         count_1 += 1
-if count_0>count_1:
+if count_0 > count_1:
     print(count_1)
 else:
     print(count_0)
-print ()
+print()
 
 
 # Задача 12: Петя и Катя – брат и сестра. Петя – студент, а Катя – школьница. Петя помогает Кате
@@ -33,10 +33,10 @@ composition = int(input("Введите произведение чисел: "))
 for i in range(sum):
     for j in range(composition):
         if sum == i+j and composition == i*j:
-            x=i
-            y=j
-print (f"Первое искомое число -> {x}, второе искомое число -> {y}")
-print ()
+            x = i
+            y = j
+print(f"Первое искомое число -> {x}, второе искомое число -> {y}")
+print()
 
 
 # Задача 14: Требуется вывести все целые степени двойки (т.е. числа вида 2k),
