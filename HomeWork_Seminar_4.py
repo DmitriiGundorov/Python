@@ -40,12 +40,15 @@ print(f"Отсортированный результат пересечения
 print("----------|  Задача 24  |----------")
 
 n = int(input("Введите количество посаженных кустов на грядке N: "))
-bush=[]
-for i in range(n):
-    bush.append(random.randint(1, 10))
+print("Количество ягод на кустах:")
+bush = [random.randint(1, 10) for i in range(n)]
 print(*bush)
-countMax=0
-for i in range(len(bush)-2):
-    if bush[i]+bush[i+1]+bush[i+2]>countMax:
-        countMax= bush[i]+bush[i+1]+bush[i+2]
+sum = countMax = 0
+
+for i in range(n):
+    sum=bush[i-2]+bush[i-1]+bush[i]
+    if sum>countMax:
+        countMax=sum
+
+
 print(f"Наибольшее количество ягод, собранных за один заход -> {countMax}")
