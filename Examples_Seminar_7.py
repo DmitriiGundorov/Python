@@ -53,10 +53,10 @@
 # strings = ["Hello, world!", "This is a sentence.", "Another sentence", "Hi"]
 # ["Hello,", "sentence.", "Another"]
 
-print("----------|  Дополнительная задача №1  |----------")
-strings = ["Hello, world!", "This is a sentence.", "Another sentence", "Hi"]
-strings_1 = list (filter( lambda x: len(x.split())==1, strings))
-print(strings_1)
+# print("----------|  Дополнительная задача №1  |----------")
+# strings = ["Hello, world!", "This is a sentence.", "Another sentence", "Hi"]
+# strings_1 = list (filter( lambda x: len(x.split())==1, strings))
+# print(strings_1)
 
 
 # Дополнительная задача №2. Вводится список целых чисел в одну строчку через пробел.
@@ -68,7 +68,13 @@ print(strings_1)
 
 print("----------|  Дополнительная задача №2  |----------")
 
+# numbers = [-8, 11, 0, -23, 140, 1]
+# print(*numbers)
+# numbers_new = list(filter(lambda x: 10<=x<100 or -10>=x>-100, numbers))
+# print(*numbers_new)
 
+# Решение преподвателя
+print(*filter(lambda x: len(str(abs(int(x)))) == 2, input().split()))
 
 # Задача №51. Напишите функцию same_by(characteristic, objects), которая проверяет,
 # все ли объекты имеют одинаковое значение некоторой характеристики, и возвращают True,
